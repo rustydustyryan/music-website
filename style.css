@@ -114,6 +114,7 @@ img {
 
 .music-container h1 {
   font-size: 25px;
+  line-height: 1.2;
 }
 
 .music-container div {
@@ -138,11 +139,11 @@ img {
 .sub-heading h1 {
   font-size: 70px;
   font-weight: 300;
-  padding-bottom: 4rem;
+  padding-bottom: .5rem;
 }
 
 .sub-heading h4 {
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 500;
   padding-bottom: 5rem;
 }
@@ -163,7 +164,6 @@ img {
 
 /* About */
 #about .container {
-  display: grid;
   margin: auto;
 }
 
@@ -171,25 +171,24 @@ img {
   font-size: 70px;
   font-weight: 300;
   text-align: center;
-  padding-bottom: 4rem;
+  padding-bottom: 3rem;
 }
 
 #about .container p {
   width: 80%;
   margin: auto;
-  padding: 0 2rem 3rem 3rem;
+  /* padding: 0 2rem 3rem 3rem; */
 }
 
 /* Contact */
 .contact-container {
   display: block;
   text-align: center;
-  font-size: 21px;
+  font-size: 20px;
   font-weight: 200;
   /* border: var(--var-white-color) 2px solid; */
   padding: .3rem;
   margin: auto;
-  width: 20%;
 }
 
 .contact-container a {
@@ -217,4 +216,55 @@ img {
 #footer h4 {
   margin: 35px auto;
   font-size: 15px;
+}
+
+@media(max-width: 1028px){
+  * {
+    line-height: 1.2;
+  }
+
+  .navbar {
+    padding: 3rem 1rem 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sub-heading h1 {
+    line-height: 1.2;
+  }
+  .sub-heading h4 {
+    line-height: 1.4;
+    padding: 0 1rem;
+  }
+  .sub-heading h3 {
+    padding: 0 1rem;
+    line-height: 1.4;
+  }
+
+  .music-container {
+    width: 80%;
+    padding: 1rem 1rem;
+    border: 2px var(--var-white-color) solid;
+  }
+  .music-container h1 {
+    font-size: 23px;
+  }
+  .music-container div {
+    padding-bottom: .5rem;
+  }
+
+  #about .container p {
+    margin: auto;
+  }
+  #about .container h1 {
+    padding-bottom: 1rem;
+  }
+
+  .contact-container {
+    font-size: 20px;
+    width: 80%;
+    padding-top: 1rem;
+  }
 }

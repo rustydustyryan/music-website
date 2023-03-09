@@ -79,6 +79,7 @@ img {
 
 .navbar ul {
   display: flex;
+  padding: 0;
 }
 
 .navbar i {
@@ -125,6 +126,7 @@ img {
 .sub-heading h3 {
   font-size: 31px;
   font-weight: 400;
+  padding-bottom: .5rem;
 }
 
 .sub-heading p {
@@ -162,6 +164,11 @@ img {
   /* opacity: .9; */
 }
 
+.reminder {
+  text-align: center;
+  padding: 1rem 0 3rem 0;
+}
+
 /* About */
 #about .container {
   margin: auto;
@@ -172,23 +179,57 @@ img {
   font-weight: 300;
   text-align: center;
   padding-bottom: 3rem;
+  text-decoration: underline var(--var-white-color);
 }
 
 #about .container p {
-  margin: auto;
-  padding: 0 10rem;
+  margin: 2rem auto;
+  padding-bottom: .5rem;
+  font-size: 19px;
   font-family: 'Raleway', sans-serif;
   line-height: 1.6;
+  max-width: 70%;
+}
+
+.aside-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5rem;
+  max-width: 60%;
+  margin: auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+.aside-container .aside-1 {
+  background: var(--var-white-color);
+  color: var(--var-primary-color);
+  padding: 1rem;
+  box-shadow: 2px 2px 4px var(--var-dark-color);
+}
+
+.aside-container .aside-2 {
+  background: var(--var-white-color);
+  color: var(--var-primary-color);
+  padding: 1rem;
+  box-shadow: 2px 2px 4px var(--var-dark-color);
+}
+
+.thank-you {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
 }
 
 /* Contact */
 .contact-container {
   display: block;
   text-align: center;
+  font-family: 'Raleway', sans-serif;
   font-size: 20px;
   font-weight: 200;
   /* border: var(--var-white-color) 2px solid; */
-  padding: .3rem;
+  padding-bottom: 2.5rem;
   margin: auto;
 }
 
@@ -198,11 +239,6 @@ img {
 
 .contact-container a:hover {
   color: var(--var-white-color);
-}
-
-.reminder {
-  text-align: center;
-  padding: 1rem;
 }
 
 
@@ -268,6 +304,7 @@ img {
   #about .container p {
     margin: auto;
     padding: 0 2rem;
+    max-width: 90%;
   }
 
   .contact-container {
@@ -278,5 +315,16 @@ img {
 
   .reminder h3 {
     line-height: 1.4;
+  }
+
+  .aside-container {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 2rem;
+    max-width: 100%;
+    grid-gap: 2rem;
+  }
+
+  .aside-container .aside-1 {
+    padding: 1rem;
   }
 }

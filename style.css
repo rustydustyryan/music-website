@@ -284,6 +284,7 @@ img {
   .sub-heading h1 {
     line-height: 1.2;
     font-size: 65px;
+    padding: 0 1rem;
   }
   .sub-heading h4 {
     line-height: 1.4;

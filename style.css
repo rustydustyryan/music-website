@@ -153,6 +153,7 @@ img {
 
 .music-container div {
   border-bottom: var(--var-blue-color) 2px solid;
+  /* text-align: center; */
 }
 
 .music-container div:last-child {
@@ -302,9 +303,11 @@ img {
   }
   .music-container h1 {
     font-size: 23px;
+    text-align: center;
   }
   .music-container div {
     padding-bottom: .5rem;
+    text-align: center;
   }
 
   #about .container h1 {
@@ -321,7 +324,6 @@ img {
   .contact-container {
     font-size: 20px;
     width: 80%;
-    padding-top: 1rem;
   }
 
   .reminder h3 {

@@ -181,6 +181,7 @@ img {
   cursor: pointer;
   padding: 10px;
   margin: 0 20px;
+  width: 8%;
 }
 
 .action-btn:focus {
@@ -193,7 +194,6 @@ img {
 .action-btn-big {
   color: var(--var-blue-color);
   font-size: 30px;
-  width: 5%;
 }
 
 .fa-pause {
@@ -395,8 +395,8 @@ img {
     height: 1px;
   }
 
-  .action-btn-big {
-    width: 10%;
+  .action-btn {
+    width: 15%;
   }
 
   #about .container h1 {

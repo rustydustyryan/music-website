@@ -13,6 +13,41 @@ const songs = [
     artist: "Desmond Cheese",
     songname: "Memories of a Dream",
     pathname: "Memories of a Dream.mp3"
+  },
+  {
+    artist: "Leon Bridges",
+    songname: "Bad Bad News",
+    pathname: "Bad Bad News.mp3"
+  },
+  {
+    artist: "Frank Moody",
+    songname: "Dopamine",
+    pathname: "Dopamine.mp3"
+  },
+  {
+    artist: "Dirtwire",
+    songname: "Amphibian Circuits",
+    pathname: "Amphibian Circuits.mp3"
+  },
+  {
+    artist: "Feiertag",
+    songname: "Run Away (feat. Pip Millett)",
+    pathname: "Run Away (feat. Pip Millett).mp3"
+  },
+  {
+    artist: "Son Little",
+    songname: "ASAP",
+    pathname: "ASAP.mp3"
+  },
+  {
+    artist: "Oddisee",
+    songname: "Born Before Yesterday",
+    pathname: "Born Before Yesterday.mp3"
+  },
+  {
+    artist: "Crumb",
+    songname: "Bones",
+    pathname: "Bones.mp3"
   }
 ];
 
@@ -22,6 +57,7 @@ for (let i = 0; i < songs.length; i++) {
   addSong(i);
 }
 
+// Spacebar to play/pause
 document.addEventListener("keydown", (event) => {
   if (event.key === " ") {
     let didPauseSong = false;
@@ -101,6 +137,23 @@ function addSong(index: number) {
   });
 
   /**
+   * Updates the progress bar to show the current progress of the song.
+   */
+  function updateProgress(e) {
+    const { duration, currentTime } = e.srcElement;
+    const progressPercent = (currentTime / duration) * 100;
+    progressInner.style.width = `${progressPercent}%`;
+  }
+
+  function setProgress(e: MouseEvent) {
+    const width = this.clientWidth;
+    const clickX = e.offsetX;
+    const duration = audio.duration;
+
+    audio.currentTime = (clickX / width) * duration;
+  }
+
+  /**
    * Binds to play button. Plays or pauses the current song.
    */
   play.addEventListener("click", () => {
@@ -117,6 +170,25 @@ function addSong(index: number) {
           pauseSong(i);
         }
       }
+    }
+  });
+
+  /**
+   * Progress listener. Updates the progress bar.
+   */
+  audio.addEventListener("timeupdate", updateProgress);
+
+  progressContainer.addEventListener("click", setProgress);
+  
+  /**
+   * Song ended listener. Plays the next song in the list.
+   */
+  audio.addEventListener("ended", () => {
+    stopSong(index);
+    if (index === 9) {
+      playSong(0);
+    } else {
+      playSong(index + 1);
     }
   });
 
@@ -154,6 +226,12 @@ function pauseSong(index: number) {
   icon.classList.remove("fa-pause");
   icon.classList.add("fa-play");
   audio.pause();
+}
+
+function stopSong(index: number) {
+  pauseSong(index);
+  const [audio] = getAudioIcon(index);
+  audio.currentTime = 0;
 }
 
 function getAudioIcon(index: number) {

@@ -20,7 +20,7 @@ const songs = [
     pathname: "Bad Bad News.mp3"
   },
   {
-    artist: "Frank Moody",
+    artist: "Franc Moody",
     songname: "Dopamine",
     pathname: "Dopamine.mp3"
   },

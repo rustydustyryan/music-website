@@ -14,8 +14,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
 
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="style.common.css">
+  <link rel="stylesheet" href="style.index.css">
+  <script src="lib/common.js" defer></script>
+  <script src="database/week_3.js" defer></script>
+  <script src="lib/index.js" defer></script>
   <title>Discover New Music | MusicKeeps</title>
 </head>
 
@@ -28,7 +31,7 @@
         <nav>
           <ul>
             <li><a href="/about.html">About</a></li>
-            <!-- <li><a href="/archive.html"><span class="music-color">Archive</span></a></li> -->
+            <li><a href="/archive.html">Archive</a></li>
             <!-- <li><a href="/donate.html"><span class="music-color">Donate</span></a></li> -->
           </ul>
         </nav>
@@ -44,29 +47,8 @@
       <!-- Music -->
       <main>
         <div class="music-container">
-          <div id="app"></div>
+          <article id="app"></>
         </div>
-
-        <!--
-        <div class="artist-1">
-          <h1><span class="artist-color">Mr. Brown</span> — <small>An Extra Day</small></h1>
-          <div class="progress-container">
-            <div class="progress"></div>
-          </div>
-          <audio src="media/An Extra Day.mp3" class="audio"></audio>
-          <div class="music-nav">
-            <button class="prev action-btn">
-            <i class="fas fa-backward"></i>
-            </button>
-            <button class="play action-btn action-btn-big">
-            <i class="fas fa-play"></i>
-            </button>
-            <button class="next action-btn">
-            <i class="fas fa-forward"></i>
-            </button>
-          </div>
-        </div>
-        -->
 
         <div class="reminder">
           <h3><span class="music-color">Fresh Friday Finds</span>... check back every Friday for an updated list of songs!</h3>

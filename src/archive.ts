@@ -5,11 +5,11 @@ for (const week of WEEKS) {
 }
 
 function addWeek(week: Week) {
-  const weekEl = addElement(archiveApp, "article", "week");
-
-  const dateOuter = addElement(weekEl, "h4");
-  const dateInner = addElement(dateOuter, "span", "music-color");
+  const dateOuter = addElement(archiveApp, "h4", "music-color");
+  const dateInner = addElement(dateOuter, "span");
   dateInner.textContent = `Week ${week.date.toLocaleDateString()}`;
+  
+  const weekEl = addElement(archiveApp, "article", "week");
 
   addSongs(weekEl, week.songs, false);
 }

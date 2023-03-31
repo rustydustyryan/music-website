@@ -1,24 +1,24 @@
 addWeekSongs(3, "3/31/2023", [
-  // {
-  //   artist: "Mr. Brown",
-  //   songname: "An Extra Day",
-  //   pathname: "An Extra Day.mp3",
-  // },
-  // {
-  //   artist: "Jakob Ogawa",
-  //   songname: "You And I",
-  //   pathname: "You And I.mp3"
-  // },
-  // {
-  //   artist: "Desmond Cheese",
-  //   songname: "Memories of a Dream",
-  //   pathname: "Memories of a Dream.mp3"
-  // },
-  // {
-  //   artist: "Leon Bridges",
-  //   songname: "Bad Bad News",
-  //   pathname: "Bad Bad News.mp3"
-  // },
+  {
+    artist: "Mr. Brown",
+    songname: "An Extra Day",
+    pathname: "An Extra Day.mp3",
+  },
+  {
+    artist: "Jakob Ogawa",
+    songname: "You And I",
+    pathname: "You And I.mp3"
+  },
+  {
+    artist: "Desmond Cheese",
+    songname: "Memories of a Dream",
+    pathname: "Memories of a Dream.mp3"
+  },
+  {
+    artist: "Leon Bridges",
+    songname: "Bad Bad News",
+    pathname: "Bad Bad News.mp3"
+  },
   {
     artist: "Franc Moody",
     songname: "Dopamine",

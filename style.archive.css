@@ -1,0 +1,10 @@
+/* Archive */
+#archive .sub-heading h2 {
+  padding: 2rem;
+}
+
+article h1 {
+  font-size: 18px;
+  line-height: 0.2;
+  color: var(--var-light-blue);
+}

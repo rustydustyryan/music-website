@@ -1,14 +1,8 @@
 * {
-  /* --var-primary-color: #344a72; */
   --var-primary-color: #29507a;
-  /* --var-green-color: #49c1a2; */
   --var-green-color: #41c7a3;
   --var-light-blue: #76acd6;
-  /* --var-blue-color: #76acd6; */
   --var-blue-color: #4373a6;
-  /* --var-blue-color: #5990b0; */
-  /* --var-blue-color: #75bad5; */
-  /* --var-blue-color: #3f4462; */
   --var-dark-blue: #15445d;
   --var-dark-color: #333;
   --var-white-color: #fff;
@@ -110,6 +104,7 @@ img {
 
 .music-color {
   color: var(--var-green-color);
+  text-align: center;
 }
 
 /* Sub heading */
@@ -312,28 +307,6 @@ article .artist-color {
   text-align: center;
   padding-bottom: 1rem;
 }
-
-/* Archive */
-#archive .sub-heading h2 {
-  padding: 2rem;
-}
-
-#archive .date {
-  text-align: center;
-}
-
-#archive .container {
-  padding: 0 1rem;
-  margin: 0 auto 3rem;
-}
-
-#archive .container h1 {
-  font-size: 18px;
-}
-
-/* #archive .container h1:last-child {
-  border-bottom: none;
-} */
 
 
 /* Footer */

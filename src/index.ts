@@ -3,23 +3,23 @@ const indexApp = document.getElementById("app");
 addSongs(indexApp, SONGS, true);
 
 // Spacebar to play/pause
-document.addEventListener("keydown", (event) => {
-  if (event.key === " ") {
-    let didPauseSong = false;
-    for (let i = 0; i < SONGS.length; i++) {
-      const [audio] = getAudioIcon(i);
-      if (!audio.paused) {
-        // TODO this isn't working right...
-        pauseSong(i);
-        event.preventDefault();
-        didPauseSong = true;
-      }
-    }
-    if (!didPauseSong) {
-      playSong(0);
-    }
-  }
-});
+// document.addEventListener("keydown", (event) => {
+//   if (event.key === " ") {
+//     let didPauseSong = false;
+//     for (let i = 0; i < SONGS.length; i++) {
+//       const [audio] = getAudioIcon(i);
+//       if (!audio.paused) {
+//         // TODO this isn't working right...
+//         pauseSong(i);
+//         event.preventDefault();
+//         didPauseSong = true;
+//       }
+//     }
+//     if (!didPauseSong) {
+//       playSong(0);
+//     }
+//   }
+// });
 
 // Public
 

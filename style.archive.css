@@ -8,3 +8,8 @@ article h1 {
   line-height: 0.2;
   color: var(--var-light-blue);
 }
+
+.week {
+  margin-bottom: 3rem;
+  margin-top: 1rem;
+}

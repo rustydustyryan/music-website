@@ -13,3 +13,48 @@ article h1 {
   margin-bottom: 3rem;
   margin-top: 1rem;
 }
+
+@media(max-width: 1028px) {
+  #archive .container {
+    padding: .5rem 1rem;
+    margin: 0 auto;
+    line-height: 1;
+  }
+
+  #archive .container h1 {
+    font-size: 18px;
+    margin: 0.5rem;
+  }
+
+  #archive>div:last-child {
+    margin-bottom: 1.5rem;
+  }
+
+  article .week {
+    width: 100%;
+    margin: auto;
+  }
+
+  #app {
+    padding: 0;
+    margin: auto;
+  }
+
+  #archive .week {
+    margin: auto;
+    margin-bottom: 1rem;
+  }
+
+  #archive .week h1 {
+    font-size: 18px;
+    padding: 0;
+  }
+
+  article > div {
+    /* padding: 0.5rem; */
+  }
+
+  #app div {
+    padding: 0.5rem 0;
+  }
+}

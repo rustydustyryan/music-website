@@ -145,7 +145,7 @@ article {
   background-color: var(--var-white-color);
   width: 50%;
   padding: 0rem 2rem;
-  border: 6px var(--var-darker-grey) solid;
+  /* border: 6px var(--var-darker-grey) solid; */
   margin: 2rem auto;
   text-align: center;
   align-items: center;
@@ -263,17 +263,17 @@ article .artist-color {
 .aside-container .aside-1 {
   background: var(--var-white-color);
   color: var(--var-primary-color);
-  border: var(--var-darker-grey) 6px solid;
+  /* border: var(--var-darker-grey) 6px solid; */
   padding: .8rem;
-  box-shadow: 2px 2px 4px var(--var-dark-color);
+  /* box-shadow: 2px 2px 4px var(--var-dark-color); */
 }
 
 .aside-container .aside-2 {
   background: var(--var-white-color);
   color: var(--var-primary-color);
-  border: var(--var-darker-grey) 6px solid;
+  /* border: var(--var-darker-grey) 6px solid; */
   padding: .8rem;
-  box-shadow: 2px 2px 4px var(--var-dark-color);
+  /* box-shadow: 2px 2px 4px var(--var-dark-color); */
 }
 
 .thank-you {
@@ -416,20 +416,5 @@ article .artist-color {
 
   .aside-container p:nth-child(3) {
     text-align: center;
-  }
-
-  #archive .container {
-    padding: .5rem 1rem;
-    margin: 0 auto;
-    line-height: 1;
-  }
-
-  #archive .container h1 {
-    font-size: 18px;
-    margin: 0.5rem;
-  }
-
-  #archive>div:last-child {
-    margin-bottom: 1.5rem;
   }
 }

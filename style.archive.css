@@ -16,9 +16,10 @@ article h1 {
 
 @media(max-width: 1028px) {
   #archive .container {
-    padding: .5rem 1rem;
-    margin: 0 auto;
+    /* padding: .5rem 1rem; */
+    margin: 0;
     line-height: 1;
+    width: 100vw;
   }
 
   #archive .container h1 {
@@ -30,19 +31,17 @@ article h1 {
     margin-bottom: 1.5rem;
   }
 
-  article {
-    width: 100%;
-    margin: auto;
-  }
-
   #app {
     padding: 0;
     margin: auto;
+    width: 100vw;
   }
 
   #archive .week {
-    margin: auto;
+    margin: 0 auto;
+    padding-top: 0.5rem;
     margin-bottom: 1rem;
+    width: 70%;
   }
 
   #archive .week h1 {

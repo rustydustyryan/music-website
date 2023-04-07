@@ -358,11 +358,15 @@ article .artist-color {
 
   #app {
     width: 80%;
-    padding: 1rem 1rem;
+    padding: .5rem 1rem;
+  }
+
+  #app .artist-1 {
+    padding: 0;
   }
 
   #app h1 {
-    font-size: 23px;
+    font-size: 21px;
     text-align: center;
   }
 
@@ -383,7 +387,7 @@ article .artist-color {
   #about .container h1 {
     font-size: 65px;
     padding: 0 2rem 0 2rem;
-    line-height: 1;
+    line-height: .7;
   }
 
   #about .container p {

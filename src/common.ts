@@ -1,13 +1,15 @@
-createPlayer('JMSN', "'Bout It");
-createPlayer('Daniel Feels', "Behave");
-createPlayer('Elhae', "Halfway Love (Prod. by Rascal)");
-createPlayer('Max Pope', "Just Friends");
+const songs = [
+  { artist: 'JMSN', title: "'Bout It" },
+  { artist: 'Daniel Feels', title: "Behave" },
+  { artist: 'Elhae', title: "Halfway Love (Prod. by Rascal)" },
+  { artist: 'Max Pope', title: "Just Friends" }
+];
 
-
-function createPlayer(artist: string, title: string) {
-  const containerEl = document.querySelector('main');
-  containerEl.innerHTML += `
-  <div class="player">
+const containerEl = document.querySelector('main');
+for (const { artist, title } of songs) {
+  const playerEl = document.createElement('div');
+  playerEl.classList.add('player');
+  playerEl.innerHTML = `
     <audio>
       <source src="media/${title}.mp3" type="audio/mpeg" />
     </audio>
@@ -21,34 +23,39 @@ function createPlayer(artist: string, title: string) {
       <div class="btn pause-btn hidden"><i class="fa-solid fa-pause fa-2x"></i></div>
       <div class="btn next-btn"><i class="fa-solid fa-forward fa-2x"></i></div>
     </div>
-  </div>
   `
+  containerEl.appendChild(playerEl);
 
-  const audioEl = Array.from(document.querySelectorAll('audio')).pop();
-  const playerEl = Array.from(document.querySelectorAll('.player')).pop();
-  const playBtn = Array.from(document.querySelectorAll('.play-btn')).pop();
+  playerEl.addEventListener('mouseover', () => {
+    console.log('clicked');
+  });
+}
+
+  // const playerEl = players.pop();
+
+
+  // const audioEl = Array.from(document.querySelectorAll('audio')).pop();
+  // const playBtn = Array.from(document.querySelectorAll('.play-btn')).pop();
   // const pauseBtn = Array.from(document.querySelectorAll('.pause-btn')).pop();
   // const nextBtn = document.querySelector('.next-btn').addEventListener('click', nextSong);
   // const prevBtn = document.querySelector('.prev-btn').addEventListener('click', prevSong);
   // const progressContainer = document.querySelector('.progress-container');
   // const progress = document.querySelector('.progress');
 
-  playerEl.addEventListener('mouseover', () => {
-    console.log('clicked');
-  })
+  // debugger;
 
-  console.log(playBtn);
+  // console.log(playBtn);
 
-  function playAudio() {
-    console.log('playing')
-    audioEl.play();
-    // playBtn.classList.add('hidden');
-    // pauseBtn.classList.remove('hidden');
-    //   if (audioEl.paused) {
-    //     audioEl.play();
-    //   }
-    }
-  
+  // function playAudio() {
+  //   console.log('playing')
+  //   audioEl.play();
+  //   // playBtn.classList.add('hidden');
+  //   // pauseBtn.classList.remove('hidden');
+  //   //   if (audioEl.paused) {
+  //   //     audioEl.play();
+  //   //   }
+  //   }
+
   // function pauseAudio() {
   //   const audioEl = document.querySelector('audio');
   //   audioEl.pause();
@@ -58,14 +65,14 @@ function createPlayer(artist: string, title: string) {
   //       audioEl.pause()
   //     }
   //   }
-  
+
   // function nextSong() {
   //   const audioEl = document.querySelector('audio');
   //   audioEl.pause();
   //   audioEl.currentTime = 0;
   //   audioEl.play();
   // }
-  
+
   // function prevSong() {
   //   const audioEl = document.querySelector('audio');
   //   audioEl.pause();
